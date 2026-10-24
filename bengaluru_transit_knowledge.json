@@ -1,0 +1,32 @@
+[
+  {
+    "doc_id": "RAG_DOC_BMRCL_FARES_2026",
+    "title": "Namma Metro (BMRCL) Official Fare Rules, Smart Cards, and Interchange Guidelines",
+    "source_org": "Bangalore Metro Rail Corporation Limited (BMRCL)",
+    "source_url": "https://english.bmrc.co.in/",
+    "published_at": "2026-01-10T00:00:00Z",
+    "category": "fare_and_ticketing",
+    "is_static_knowledge": true,
+    "content": "Namma Metro operates two primary operational corridors in Bengaluru: the Purple Line (Challaghatta to Whitefield Kadugodi via Majestic, MG Road, Indiranagar, Benniganahalli, and KR Puram) and the Green Line (Madavara/Nagasandra to Silk Institute via Yeshwanthpur, Majestic, Jayanagar, and Banashankari). Nadaprabhu Kempegowda Station at Majestic is the central interchange connecting the Purple and Green lines. Base token fare starts at INR 10 and scales by station distance up to INR 60. Passengers using Contactless Smart Cards or NCMC (National Common Mobility Card) receive a 5% discount on all rides and an additional 5% off-peak discount during non-peak hours. Mobile QR tickets can be purchased via the official Namma Metro app or the BMRCL WhatsApp chatbot (+91 8105556677). Every Namma Metro station features tactile paving, elevators (lifts), wheelchair ramps, and accessible washrooms."
+  },
+  {
+    "doc_id": "RAG_DOC_BMTC_PASSES_AND_FEEDERS",
+    "title": "BMTC Bus Services, Vajra AC Corridors, Metro Feeders, and Shakti Scheme Rules",
+    "source_org": "Bengaluru Metropolitan Transport Corporation (BMTC)",
+    "source_url": "https://mybmtc.karnataka.gov.in/",
+    "published_at": "2026-01-12T00:00:00Z",
+    "category": "bus_operations",
+    "is_static_knowledge": true,
+    "content": "BMTC operates Ordinary, Metro Feeder (MF series), Vajra AC (335E, 500D, 356C), and Vayu Vajra Airport (KIA series) buses. Route 500-D connects Central Silk Board, Marathahalli, KR Puram, Benniganahalli, Manyata Tech Park, and Hebbal along the Outer Ring Road (ORR). Route 335-E connects Majestic, MG Road, Indiranagar, KR Puram, and Whitefield/ITPL. Route 356-C connects Majestic and Silk Board to Electronic City via the Elevated Flyover. For reaching Manyata Tech Park via Metro, commuters can take the Purple Line to Benniganahalli (Tin Factory) or KR Puram and board BMTC Metro Feeder MF-12 or Route 500-D directly to Manyata Tech Park Main Gate. Digital daily and monthly passes are available on the Tummoc and Namma BMTC official portals. UPI QR payments are accepted on conductors' ETM machines."
+  },
+  {
+    "doc_id": "RAG_DOC_BENGALURU_ACCESSIBILITY_AND_SAFETY",
+    "title": "Accessibility, Pedestrian Skywalks, and Multimodal Transfer Guidance in Bengaluru",
+    "source_org": "Directorate of Urban Land Transport (DULT) Karnataka",
+    "source_url": "https://dult.karnataka.gov.in/",
+    "published_at": "2026-02-01T00:00:00Z",
+    "category": "accessibility_and_transfers",
+    "is_static_knowledge": true,
+    "content": "Interchange transfers at Majestic (Kempegowda) connect Namma Metro directly via pedestrian footbridge/underpass to BMTC Kempegowda Bus Station platforms (walking distance ~250m, step-free elevator access available at Metro Gate C). At Benniganahalli and KR Puram on the Purple Line, overhead pedestrian skywalks with elevators connect the Metro concourse directly to the Outer Ring Road (ORR) BMTC bus bays toward Manyata Tech Park and Hebbal. At Banashankari, the Green Line Metro connects via skywalk (~180m) to the Banashankari TTMC bus terminal. Notice on Live Data: Historical or static knowledge documents in TripBuddy AI never represent live vehicle locations or real-time traffic."
+  }
+]

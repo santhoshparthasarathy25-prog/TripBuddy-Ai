@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BMTCStopAndRouteDataset",
+  "type": "object",
+  "required": [
+    "dataset_label",
+    "is_demo_fixture",
+    "stops",
+    "routes"
+  ],
+  "properties": {
+    "dataset_label": {
+      "type": "string"
+    },
+    "is_demo_fixture": {
+      "type": "boolean"
+    },
+    "stops": {
+      "type": "array"
+    },
+    "routes": {
+      "type": "array"
+    }
+  }
+}

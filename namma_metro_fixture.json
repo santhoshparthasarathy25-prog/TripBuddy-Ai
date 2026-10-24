@@ -1,0 +1,140 @@
+{
+  "dataset_label": "DEVELOPMENT_FIXTURE_NAMMA_METRO_2026",
+  "is_demo_fixture": true,
+  "operating_hours": "05:00 to 23:00 IST",
+  "official_ticketing_channels": [
+    {
+      "channel_name": "BMRCL Official WhatsApp Chatbot",
+      "url": "https://wa.me/918105556677",
+      "mode": "QR Ticket Purchase"
+    },
+    {
+      "channel_name": "Namma Metro Official Portal (BMRCL)",
+      "url": "https://english.bmrc.co.in/",
+      "mode": "Smart Card Recharge & Fare Calculator"
+    }
+  ],
+  "lines": [
+    {
+      "line_id": "PURPLE_LINE",
+      "name_en": "Purple Line (Challaghatta — Whitefield Kadugodi)",
+      "name_kn": "ನೇರಳೆ ಮಾರ್ಗ",
+      "color_hex": "#7E22CE",
+      "headway_peak_mins": 4,
+      "headway_offpeak_mins": 8,
+      "stations": [
+        {
+          "station_id": "METRO_MAJESTIC",
+          "name": "Nadaprabhu Kempegowda Station, Majestic",
+          "lat": 12.9767,
+          "lon": 77.5713,
+          "location_id": "LOC_MAJESTIC",
+          "is_interchange": true,
+          "interchange_lines": [
+            "PURPLE_LINE",
+            "GREEN_LINE"
+          ]
+        },
+        {
+          "station_id": "METRO_MG_ROAD",
+          "name": "Mahatma Gandhi Road",
+          "lat": 12.9756,
+          "lon": 77.6066,
+          "location_id": "LOC_MG_ROAD",
+          "is_interchange": false,
+          "interchange_lines": [
+            "PURPLE_LINE"
+          ]
+        },
+        {
+          "station_id": "METRO_INDIRANAGAR",
+          "name": "Indiranagar",
+          "lat": 12.9784,
+          "lon": 77.6408,
+          "location_id": "LOC_INDIRANAGAR",
+          "is_interchange": false,
+          "interchange_lines": [
+            "PURPLE_LINE"
+          ]
+        },
+        {
+          "station_id": "METRO_BENNIGANAHALLI",
+          "name": "Benniganahalli",
+          "lat": 12.9968,
+          "lon": 77.6612,
+          "location_id": "LOC_BENNIGANAHALLI",
+          "is_interchange": false,
+          "interchange_lines": [
+            "PURPLE_LINE"
+          ]
+        },
+        {
+          "station_id": "METRO_KR_PURAM",
+          "name": "Krishnarajapura (KR Puram)",
+          "lat": 13.0005,
+          "lon": 77.6746,
+          "location_id": "LOC_KR_PURAM",
+          "is_interchange": false,
+          "interchange_lines": [
+            "PURPLE_LINE"
+          ]
+        },
+        {
+          "station_id": "METRO_WHITEFIELD",
+          "name": "Whitefield (Kadugodi)",
+          "lat": 12.9961,
+          "lon": 77.7577,
+          "location_id": "LOC_WHITEFIELD",
+          "is_interchange": false,
+          "interchange_lines": [
+            "PURPLE_LINE"
+          ]
+        }
+      ]
+    },
+    {
+      "line_id": "GREEN_LINE",
+      "name_en": "Green Line (Madavara / Nagasandra — Silk Institute)",
+      "name_kn": "ಹಸಿರು ಮಾರ್ಗ",
+      "color_hex": "#15803D",
+      "headway_peak_mins": 5,
+      "headway_offpeak_mins": 9,
+      "stations": [
+        {
+          "station_id": "METRO_YESHWANTHPUR",
+          "name": "Yeshwanthpur",
+          "lat": 13.0232,
+          "lon": 77.5499,
+          "location_id": "LOC_YESHWANTHPUR",
+          "is_interchange": false,
+          "interchange_lines": [
+            "GREEN_LINE"
+          ]
+        },
+        {
+          "station_id": "METRO_MAJESTIC",
+          "name": "Nadaprabhu Kempegowda Station, Majestic",
+          "lat": 12.9767,
+          "lon": 77.5713,
+          "location_id": "LOC_MAJESTIC",
+          "is_interchange": true,
+          "interchange_lines": [
+            "PURPLE_LINE",
+            "GREEN_LINE"
+          ]
+        },
+        {
+          "station_id": "METRO_BANASHANKARI",
+          "name": "Banashankari",
+          "lat": 12.9152,
+          "lon": 77.5736,
+          "location_id": "LOC_BANASHANKARI",
+          "is_interchange": false,
+          "interchange_lines": [
+            "GREEN_LINE"
+          ]
+        }
+      ]
+    }
+  ]
+}

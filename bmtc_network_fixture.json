@@ -1,0 +1,214 @@
+{
+  "dataset_label": "DEVELOPMENT_FIXTURE_BMTC_SCHEDULE_2026",
+  "is_demo_fixture": true,
+  "disclaimer": "Schedule-based demonstration dataset modeled on actual BMTC corridor routes (500D, 335E, KIA-9, 356C, 290E, MF-1). Live vehicle telemetry requires authorized BMTC GTFS-Realtime feed credentials.",
+  "stops": [
+    {
+      "stop_id": "BMTC_KBS_01",
+      "name": "Kempegowda Bus Station (Majestic)",
+      "lat": 12.9767,
+      "lon": 77.5713,
+      "location_id": "LOC_MAJESTIC",
+      "shelter": true,
+      "wheelchair_boarding": true
+    },
+    {
+      "stop_id": "BMTC_MGR_01",
+      "name": "MG Road Metro Bus Stop",
+      "lat": 12.9754,
+      "lon": 77.6063,
+      "location_id": "LOC_MG_ROAD",
+      "shelter": true,
+      "wheelchair_boarding": true
+    },
+    {
+      "stop_id": "BMTC_IND_01",
+      "name": "Indiranagar Police Station / KFC",
+      "lat": 12.9781,
+      "lon": 77.6405,
+      "location_id": "LOC_INDIRANAGAR",
+      "shelter": true,
+      "wheelchair_boarding": true
+    },
+    {
+      "stop_id": "BMTC_BEN_01",
+      "name": "Tin Factory / Benniganahalli",
+      "lat": 12.9965,
+      "lon": 77.661,
+      "location_id": "LOC_BENNIGANAHALLI",
+      "shelter": true,
+      "wheelchair_boarding": false
+    },
+    {
+      "stop_id": "BMTC_KRP_01",
+      "name": "KR Puram Railway Station Bus Stop",
+      "lat": 13.0003,
+      "lon": 77.6744,
+      "location_id": "LOC_KR_PURAM",
+      "shelter": true,
+      "wheelchair_boarding": true
+    },
+    {
+      "stop_id": "BMTC_WFD_01",
+      "name": "Whitefield TTMC / Kadugodi",
+      "lat": 12.9958,
+      "lon": 77.7574,
+      "location_id": "LOC_WHITEFIELD",
+      "shelter": true,
+      "wheelchair_boarding": true
+    },
+    {
+      "stop_id": "BMTC_HEB_01",
+      "name": "Hebbal Bridge Bus Stop",
+      "lat": 13.0356,
+      "lon": 77.5968,
+      "location_id": "LOC_HEBBAL",
+      "shelter": true,
+      "wheelchair_boarding": false
+    },
+    {
+      "stop_id": "BMTC_MTP_01",
+      "name": "Manyata Tech Park Main Gate",
+      "lat": 13.0454,
+      "lon": 77.6203,
+      "location_id": "LOC_MANYATA",
+      "shelter": true,
+      "wheelchair_boarding": true
+    },
+    {
+      "stop_id": "BMTC_SLK_01",
+      "name": "Central Silk Board Bus Stop",
+      "lat": 12.9175,
+      "lon": 77.6235,
+      "location_id": "LOC_SILK_BOARD",
+      "shelter": true,
+      "wheelchair_boarding": true
+    },
+    {
+      "stop_id": "BMTC_ECY_01",
+      "name": "Electronic City Phase 1 Wipro Gate",
+      "lat": 12.845,
+      "lon": 77.66,
+      "location_id": "LOC_ELECTRONIC_CITY",
+      "shelter": true,
+      "wheelchair_boarding": true
+    },
+    {
+      "stop_id": "BMTC_YPR_01",
+      "name": "Yeshwanthpur TTMC",
+      "lat": 13.023,
+      "lon": 77.5496,
+      "location_id": "LOC_YESHWANTHPUR",
+      "shelter": true,
+      "wheelchair_boarding": true
+    },
+    {
+      "stop_id": "BMTC_BSK_01",
+      "name": "Banashankari TTMC",
+      "lat": 12.915,
+      "lon": 77.5734,
+      "location_id": "LOC_BANASHANKARI",
+      "shelter": true,
+      "wheelchair_boarding": true
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "BMTC_500D",
+      "route_short_name": "500-D",
+      "route_long_name": "Central Silk Board \u2014 KR Puram \u2014 Manyata Tech Park \u2014 Hebbal",
+      "service_type": "Vajra AC / Ordinary Corridor",
+      "headway_mins": 8,
+      "base_fare_inr": 20.0,
+      "per_km_inr": 1.8,
+      "wheelchair_accessible": true,
+      "stop_sequence": [
+        "BMTC_SLK_01",
+        "BMTC_KRP_01",
+        "BMTC_BEN_01",
+        "BMTC_MTP_01",
+        "BMTC_HEB_01"
+      ]
+    },
+    {
+      "route_id": "BMTC_335E",
+      "route_short_name": "335-E",
+      "route_long_name": "Kempegowda Bus Station (Majestic) \u2014 MG Road \u2014 Indiranagar \u2014 Whitefield",
+      "service_type": "Vajra AC",
+      "headway_mins": 12,
+      "base_fare_inr": 25.0,
+      "per_km_inr": 2.0,
+      "wheelchair_accessible": true,
+      "stop_sequence": [
+        "BMTC_KBS_01",
+        "BMTC_MGR_01",
+        "BMTC_IND_01",
+        "BMTC_BEN_01",
+        "BMTC_KRP_01",
+        "BMTC_WFD_01"
+      ]
+    },
+    {
+      "route_id": "BMTC_356C",
+      "route_short_name": "356-C",
+      "route_long_name": "Kempegowda Bus Station (Majestic) \u2014 Silk Board \u2014 Electronic City",
+      "service_type": "Vajra AC / NICE Express",
+      "headway_mins": 10,
+      "base_fare_inr": 25.0,
+      "per_km_inr": 1.9,
+      "wheelchair_accessible": true,
+      "stop_sequence": [
+        "BMTC_KBS_01",
+        "BMTC_BSK_01",
+        "BMTC_SLK_01",
+        "BMTC_ECY_01"
+      ]
+    },
+    {
+      "route_id": "BMTC_290E",
+      "route_short_name": "290-E",
+      "route_long_name": "Kempegowda Bus Station (Majestic) \u2014 Hebbal \u2014 Manyata Tech Park",
+      "service_type": "Ordinary",
+      "headway_mins": 10,
+      "base_fare_inr": 15.0,
+      "per_km_inr": 1.2,
+      "wheelchair_accessible": false,
+      "stop_sequence": [
+        "BMTC_KBS_01",
+        "BMTC_YPR_01",
+        "BMTC_HEB_01",
+        "BMTC_MTP_01"
+      ]
+    },
+    {
+      "route_id": "BMTC_MF_MTP",
+      "route_short_name": "MF-12",
+      "route_long_name": "Benniganahalli Metro Feeder \u2014 Manyata Tech Park \u2014 Hebbal",
+      "service_type": "Metro Feeder AC Electric",
+      "headway_mins": 7,
+      "base_fare_inr": 15.0,
+      "per_km_inr": 1.4,
+      "wheelchair_accessible": true,
+      "stop_sequence": [
+        "BMTC_BEN_01",
+        "BMTC_MTP_01",
+        "BMTC_HEB_01"
+      ]
+    },
+    {
+      "route_id": "BMTC_600F",
+      "route_short_name": "600-F",
+      "route_long_name": "Banashankari TTMC \u2014 Silk Board \u2014 Electronic City",
+      "service_type": "Ordinary",
+      "headway_mins": 12,
+      "base_fare_inr": 15.0,
+      "per_km_inr": 1.2,
+      "wheelchair_accessible": false,
+      "stop_sequence": [
+        "BMTC_BSK_01",
+        "BMTC_SLK_01",
+        "BMTC_ECY_01"
+      ]
+    }
+  ]
+}

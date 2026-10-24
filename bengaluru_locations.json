@@ -1,0 +1,235 @@
+{
+  "dataset_metadata": {
+    "name": "Bengaluru Verified Core Landmarks & Transit Hubs",
+    "version": "2026.1",
+    "is_demo_fixture": true,
+    "coordinate_reference_system": "EPSG:4326 (WGS84)",
+    "bounding_box": {
+      "min_lat": 12.75,
+      "max_lat": 13.2,
+      "min_lon": 77.4,
+      "max_lon": 77.8
+    },
+    "source": "OpenStreetMap / BMRCL / BMTC Public Station Coordinates (Development Fixture)"
+  },
+  "locations": [
+    {
+      "location_id": "LOC_MAJESTIC",
+      "name_en": "Kempegowda Bus Station (Majestic)",
+      "name_kn": "ಕೆಂಪೇಗೌಡ ಬಸ್ ನಿಲ್ದಾಣ (ಮೆಜೆಸ್ಟಿಕ್)",
+      "aliases": [
+        "majestic",
+        "kempegowda",
+        "kbs",
+        "nadaprabhu kempegowda",
+        "ಮೆಜೆಸ್ಟಿಕ್"
+      ],
+      "category": "interchange",
+      "latitude": 12.9767,
+      "longitude": 77.5713,
+      "ward_or_area": "Gandhinagar / Chickpet",
+      "wheelchair_accessible": true,
+      "source": "BMRCL & BMTC Public Geo Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_MG_ROAD",
+      "name_en": "MG Road",
+      "name_kn": "ಎಂ.ಜಿ. ರಸ್ತೆ",
+      "aliases": [
+        "mg road",
+        "mahatma gandhi road",
+        "brigade road",
+        "ಎಂಜಿ ರಸ್ತೆ"
+      ],
+      "category": "commercial",
+      "latitude": 12.9756,
+      "longitude": 77.6066,
+      "ward_or_area": "Shanthala Nagar",
+      "wheelchair_accessible": true,
+      "source": "BMRCL Purple Line Station Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_INDIRANAGAR",
+      "name_en": "Indiranagar",
+      "name_kn": "ಇಂದಿರಾನಗರ",
+      "aliases": [
+        "indiranagar",
+        "100 feet road",
+        "cmh road",
+        "ಇಂದಿರಾನಗರ"
+      ],
+      "category": "commercial",
+      "latitude": 12.9784,
+      "longitude": 77.6408,
+      "ward_or_area": "Hoysala Nagar / Indiranagar",
+      "wheelchair_accessible": true,
+      "source": "BMRCL Purple Line Station Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_KR_PURAM",
+      "name_en": "KR Puram (Krishnarajapura)",
+      "name_kn": "ಕೆ.ಆರ್. ಪುರಂ (ಕೃಷ್ಣರಾಜಪುರ)",
+      "aliases": [
+        "kr puram",
+        "krishnarajapura",
+        "tin factory",
+        "ಕೆಆರ್ ಪುರಂ"
+      ],
+      "category": "interchange",
+      "latitude": 13.0005,
+      "longitude": 77.6746,
+      "ward_or_area": "Krishnarajapura",
+      "wheelchair_accessible": true,
+      "source": "BMRCL Purple Line & ORR Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_WHITEFIELD",
+      "name_en": "Whitefield (Kadugodi)",
+      "name_kn": "ವೈಟ್‌ಫೀಲ್ಡ್ (ಕಾಡುಗೋಡಿ)",
+      "aliases": [
+        "whitefield",
+        "kadugodi",
+        "itpl",
+        "hope farm",
+        "ವೈಟ್‌ಫೀಲ್ಡ್"
+      ],
+      "category": "tech_park",
+      "latitude": 12.9961,
+      "longitude": 77.7577,
+      "ward_or_area": "Kadugodi / Whitefield",
+      "wheelchair_accessible": true,
+      "source": "BMRCL Purple Line Terminal Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_ELECTRONIC_CITY",
+      "name_en": "Electronic City",
+      "name_kn": "ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸಿಟಿ",
+      "aliases": [
+        "electronic city",
+        "ecity",
+        "konappana agrahara",
+        "infosys gate",
+        "ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸಿಟಿ"
+      ],
+      "category": "tech_park",
+      "latitude": 12.8452,
+      "longitude": 77.6602,
+      "ward_or_area": "Electronic City Phase 1",
+      "wheelchair_accessible": true,
+      "source": "BMTC / BMRCL Yellow Line Corridor Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_YESHWANTHPUR",
+      "name_en": "Yeshwanthpur",
+      "name_kn": "ಯಶವಂತಪುರ",
+      "aliases": [
+        "yeshwanthpur",
+        "yesvantpur",
+        "ypr",
+        "ಯಶವಂತಪುರ"
+      ],
+      "category": "transit_hub",
+      "latitude": 13.0232,
+      "longitude": 77.5499,
+      "ward_or_area": "Yeshwanthpur",
+      "wheelchair_accessible": true,
+      "source": "BMRCL Green Line Station Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_BANASHANKARI",
+      "name_en": "Banashankari",
+      "name_kn": "ಬನಶಂಕರಿ",
+      "aliases": [
+        "banashankari",
+        "bsk",
+        "banashankari ttmc",
+        "ಬನಶಂಕರಿ"
+      ],
+      "category": "transit_hub",
+      "latitude": 12.9152,
+      "longitude": 77.5736,
+      "ward_or_area": "Banashankari Temple Ward",
+      "wheelchair_accessible": true,
+      "source": "BMRCL Green Line & BMTC TTMC Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_HEBBAL",
+      "name_en": "Hebbal",
+      "name_kn": "ಹೆಬ್ಬಾಳ",
+      "aliases": [
+        "hebbal",
+        "hebbal flyover",
+        "esteem mall",
+        "ಹೆಬ್ಬಾಳ"
+      ],
+      "category": "transit_hub",
+      "latitude": 13.0358,
+      "longitude": 77.597,
+      "ward_or_area": "Hebbal",
+      "wheelchair_accessible": false,
+      "source": "BMTC ORR / Airport Corridor Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_MANYATA",
+      "name_en": "Manyata Tech Park",
+      "name_kn": "ಮಾನ್ಯತಾ ಟೆಕ್ ಪಾರ್ಕ್",
+      "aliases": [
+        "manyata",
+        "manyata tech park",
+        "nagawara",
+        "ಮಾನ್ಯತಾ ಟೆಕ್ ಪಾರ್ಕ್"
+      ],
+      "category": "tech_park",
+      "latitude": 13.0456,
+      "longitude": 77.6206,
+      "ward_or_area": "Nagawara / ORR North",
+      "wheelchair_accessible": true,
+      "source": "BMTC ORR Corridor Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_SILK_BOARD",
+      "name_en": "Central Silk Board",
+      "name_kn": "ಸೆಂಟ್ರಲ್ ಸಿಲ್ಕ್ ಬೋರ್ಡ್",
+      "aliases": [
+        "silk board",
+        "csb",
+        "hosur road junction",
+        "ಸಿಲ್ಕ್ ಬೋರ್ಡ್"
+      ],
+      "category": "interchange",
+      "latitude": 12.9177,
+      "longitude": 77.6238,
+      "ward_or_area": "BTM Layout / Madiwala",
+      "wheelchair_accessible": true,
+      "source": "BMTC & BMRCL Interchange Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "location_id": "LOC_BENNIGANAHALLI",
+      "name_en": "Benniganahalli (Tin Factory)",
+      "name_kn": "ಬೆನ್ನಿಗಾನಹಳ್ಳಿ (ಟಿನ್ ಫ್ಯಾಕ್ಟರಿ)",
+      "aliases": [
+        "benniganahalli",
+        "tin factory",
+        "old madras road"
+      ],
+      "category": "interchange",
+      "latitude": 12.9968,
+      "longitude": 77.6612,
+      "ward_or_area": "Benniganahalli",
+      "wheelchair_accessible": true,
+      "source": "BMRCL Purple Line Reference",
+      "verified_at": "2026-01-15T00:00:00Z"
+    }
+  ]
+}
