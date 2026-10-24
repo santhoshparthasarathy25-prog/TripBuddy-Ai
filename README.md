@@ -1,93 +1,76 @@
-# TripBuddy AI — Agentic Multimodal Travel Assistant for Bengaluru
+# TripBuddy AI — Bengaluru Agentic Travel Assistant
 
-TripBuddy AI is a full-stack, multi-agent AI travel assistant engineered specifically for **Bengaluru, Karnataka, India**. It plans door-to-door journeys from point A to point B, compares **BMTC buses**, **Namma Metro (Purple & Green Lines)**, **pedestrian skywalks/walking**, and **last-mile auto-rickshaws**, answers natural-language travel queries in **English and Kannada (ಕನ್ನಡ)** using a grounded **Retrieval-Augmented Generation (RAG)** pipeline, and assists commuters proactively throughout their trip.
+TripBuddy AI is a project for exploring multimodal journey planning in Bengaluru, with a React/TypeScript interface and a planned FastAPI, RAG, route-optimization and multi-agent backend.
 
----
+- **Repository:** https://github.com/santhoshparthasarathy25-prog/TripBuddy-Ai
+- **Static project homepage:** https://santhoshparthasarathy25-prog.github.io/TripBuddy-Ai/
+- **Primary city:** Bengaluru, Karnataka, India
 
-## Key Features & Honesty Guarantees
+## Current repository status
 
-1. **12 Specialist AI Agents + Central Trip Orchestrator**: Explicit state-machine orchestration (`Intent Extraction → Clarification → Geospatial Resolution → Parallel Context Retrieval → Graph Route Optimization → Safety Validation → Human Approval Gate → Proactive Monitoring`).
-2. **Graph-Based Multimodal Routing Engine**: Uses Dijkstra/A* over a connected graph of Namma Metro stations, BMTC bus corridors (`500-D`, `335-E`, `356-C`, `290-E`, `MF-12`, `600-F`), pedestrian skywalks, and metered auto connectors to generate **Fastest**, **Cheapest**, and **Best-Balanced** itineraries.
-3. **Demo Mode vs. Live Mode Transparency**:
-   - **Demo Mode (Default)**: Runs out-of-the-box without paid API keys using deterministic, clearly labeled Bengaluru schedule fixtures (`SCHEDULE_AND_DEMO_FIXTURE`). Never claims simulated data represents live GPS vehicle positions.
-   - **Live Mode**: Connects to configured external providers and falls back safely when institutional credentials (such as BMTC GTFS-Realtime or commercial traffic APIs) are not present.
-4. **Strict Booking Safety Gate**: Requires explicit user confirmation (`user_explicit_approval=True`) before generating an official booking handoff to BMRCL Namma Metro, BMTC, or Namma Yatri. Never collects payment card credentials or fabricates fake ticket confirmations.
+The repository includes a React/Vite frontend source set at the repository root (App.tsx, main.tsx, api.ts, BengaluruMap.tsx, index.css, and configuration files), sample Bengaluru transport data, project architecture notes, and a FastAPI entry-point file.
 
----
+**Important:** The repository's current file layout is not yet consistent with all backend and Docker configuration paths. For example, main.py imports modules from an app/ package that is not present in the current root listing, while the Dockerfiles/Compose file refer to backend/, frontend/src/, scripts/, and infrastructure/ paths. Consequently, the complete backend and Docker setup cannot be considered verified or runnable from the current repository snapshot. Restore the missing source directories from the complete project archive before claiming the full stack works.
 
-## Supported Dependency Versions
+The root index.html is a lightweight GitHub Pages landing page. It is a project overview and **not** the interactive React app or a live travel service.
 
-- **Python**: `3.11+` (`FastAPI`, `Pydantic`, `SQLAlchemy`, `NumPy`, `SciPy`, `Pandas`, `Scikit-learn`, `PyTorch`, `Sentence-Transformers`)
-- **Node.js**: `20.x LTS` (`React 18.3`, `TypeScript 5.6`, `Vite 5.4`, `Tailwind CSS 3.4`, `Leaflet 1.9` / `MapLibre GL 4.7`)
-- **Database**: `PostgreSQL 16` with `PostGIS 3.4` and `pgvector` (plus automatic zero-config `SQLite3` fallback for local development and automated testing)
-- **Cache & Workers**: `Redis 7.2` + `app.workers.runner`
+## Frontend: local development
 
----
+Requirements: Node.js 20 LTS or compatible current LTS and npm.
 
-## Quick Start & Installation
+From the repository root:
 
-### 1. Environment Configuration
-
-#### Linux / macOS
 ```bash
-cp .env.example .env
-```
-
-#### Windows PowerShell
-```powershell
-Copy-Item .env.example .env
-```
-
-### 2. Option A — Run Complete Stack with Docker Compose
-```bash
-docker compose up --build
-```
-- **Backend API & Swagger Docs**: `http://localhost:8000/docs`
-- **Health Check**: `http://localhost:8000/health`
-- **Frontend Web App**: `http://localhost:5173`
-
-### 3. Option B — Local Development Setup (Linux / macOS / Windows PowerShell)
-
-#### Backend Setup, Migrations, Data Import & ML Training
-```bash
-# 1. Install dependencies (if using a fresh virtual environment)
-cd backend
-python3 -m venv .venv
-# Linux/macOS: source .venv/bin/activate
-# Windows PowerShell: .\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-
-# 2. Import verified Bengaluru landmarks, BMTC routes & Namma Metro stations
-python3 ../scripts/import_transport_data.py
-
-# 3. Train and evaluate ML regression & classification models
-python3 ../scripts/train_and_evaluate_ml.py
-
-# 4. Start the FastAPI backend server
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
-
-#### Frontend Setup
-```bash
-cd frontend
 npm install
 npm run dev
 ```
 
----
+Vite is configured to serve the UI on port 5173. API calls require a running backend; the frontend alone does not provide live route, traffic, GPS vehicle, booking, or advisory data.
 
-## Running Automated Tests
+To build/type-check the frontend:
 
 ```bash
-# Run complete backend unit, integration, routing, RAG, ML, security & E2E acceptance suite
-cd backend
-PYTHONPATH=. python3 -m unittest discover -s tests -p "test_*.py" -v
+npm run typecheck
+npm run build
 ```
 
----
+If a command fails, read the first reported TypeScript/build error and resolve it before deploying.
 
-## Troubleshooting
+## Backend and Docker
 
-- **Missing Institutional API Keys (BMTC GTFS-RT / TomTom Traffic)**: Keep `OPERATING_MODE=demo` in `.env` to run with deterministic schedule fixtures.
-- **Port 8000 or 5173 Already in Use**: Change `PORT` in `.env` or pass `--port 8001` to `uvicorn`.
-- **Browser Geolocation Denied**: Use the manual Bengaluru Hub selector in the Journey Planner; TripBuddy AI never tracks location without explicit user consent.
+The backend is intended to use FastAPI, SQLAlchemy, PostgreSQL/PostGIS or SQLite fallback, Redis, ML utilities and a RAG pipeline. However, restore the missing backend/app/, scripts/, infrastructure/, and related expected source directories from the complete archive before using the backend commands or Docker Compose. The current repository snapshot has not been verified as a runnable full-stack deployment.
+
+Do not use docker compose up --build until those paths and the Compose configuration have been checked.
+
+## Planned capabilities
+
+- Multimodal journey options across BMTC, Namma Metro, walking and last-mile links
+- Route comparison for travel time and estimated cost
+- Natural-language travel help with retrieval-augmented generation (RAG)
+- Specialist-agent workflow for intent, location, routing, safety and trip monitoring
+- English and Kannada support as implementation permits
+
+These are project goals and code-architecture areas, not a guarantee that all features are currently connected to live providers.
+
+## Live data, privacy and safety
+
+- Sample schedules and fixtures must be labelled as demo data; they are not live GPS vehicle positions.
+- Access to the user's location should require browser permission and explicit consent.
+- Official transit, traffic, weather and booking integrations may require provider access, API credentials or institutional approval.
+- Never commit .env, API keys, passwords, private keys, database dumps or personal data. Use .env.example as a template and keep real values in an ignored local .env file.
+
+## Repository map
+
+- index.html — static project overview for GitHub Pages
+- App.tsx, main.tsx, api.ts, BengaluruMap.tsx, index.css — frontend source files currently at root
+- package.json, vite.config.ts, tsconfig.json — frontend tooling
+- main.py, config.py, requirements.txt — backend entry/configuration files; expected supporting package tree must be restored
+- ARCHITECTURE.md, SECURITY_AUDIT.md — design and security notes
+- JSON files — Bengaluru location, transit and knowledge fixtures
+
+## Contributing
+
+1. Make changes on a feature branch.
+2. Keep secrets and local environment files out of commits.
+3. Run the frontend type-check/build and any available tests.
+4. Clearly document which functionality is demo-only and which has been tested against real providers.
