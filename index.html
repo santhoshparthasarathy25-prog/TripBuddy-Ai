@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="TripBuddy AI is an agentic travel assistant concept for multimodal journeys across Bengaluru, India.">
+  <title>TripBuddy AI — Bengaluru Travel Assistant</title>
+  <style>
+    :root{color-scheme:dark;--bg:#07111f;--panel:#0e1c2e;--line:#233951;--text:#edf5ff;--muted:#a8bbd0;--cyan:#62e4df;--blue:#6aa8ff}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#12314a 0,transparent 45%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
+    header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid #ffffff12}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.2px}.logo{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--cyan),var(--blue));color:#06121e;font-weight:900}
+    .nav{display:flex;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+    .hero{padding:78px 0 55px;display:grid;grid-template-columns:1.3fr .7fr;gap:34px;align-items:center}
+    .eyebrow{display:inline-flex;border:1px solid #62e4df55;color:var(--cyan);padding:5px 11px;border-radius:999px;font-size:12px;font-weight:750;letter-spacing:1px;text-transform:uppercase}
+    h1{font-size:clamp(42px,6vw,70px);line-height:1.02;letter-spacing:-2.5px;margin:20px 0}h1 span{color:var(--cyan)}
+    .lead{font-size:18px;color:var(--muted);max-width:650px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 17px;border-radius:12px;background:var(--cyan);color:#07111f;font-weight:800}.btn.secondary{background:#ffffff08;border:1px solid var(--line);color:var(--text)}
+    .route-card{border:1px solid var(--line);background:linear-gradient(145deg,#10243a,#0a1726);border-radius:22px;padding:23px;box-shadow:0 22px 70px #0003}
+    .route-card h2{font-size:17px;margin:0 0 18px}.route{display:flex;gap:13px;margin:15px 0;align-items:flex-start}.dot{width:12px;height:12px;margin-top:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px #62e4df18;flex:none}.route p{margin:0}.route small{color:var(--muted)}.route-line{height:22px;border-left:1px dashed #55728e;margin-left:5px}
+    section{padding:28px 0 46px}.section-title{font-size:28px;letter-spacing:-.7px;margin:0 0 8px}.section-copy{color:var(--muted);margin:0 0 22px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{border:1px solid var(--line);background:#0b1929c9;padding:20px;border-radius:17px}.feature .icon{font-size:23px}.feature h3{font-size:17px;margin:10px 0 5px}.feature p{font-size:14px;color:var(--muted);margin:0}
+    .notice{border:1px solid #e7b65a55;background:#e7b65a0d;border-radius:15px;padding:17px 19px;color:#f6dfb0;font-size:14px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border-left:2px solid var(--cyan);padding:5px 0 5px 15px}.step strong{display:block;margin-bottom:5px}.step p{margin:0;color:var(--muted);font-size:14px}
+    footer{border-top:1px solid #ffffff12;padding:24px 0 38px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:55px 0 35px}.grid,.steps{grid-template-columns:1fr}.nav{gap:11px}h1{letter-spacing:-1.5px}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="brand"><div class="logo" aria-hidden="true">TB</div><span>TripBuddy AI</span></div>
+    <nav class="nav" aria-label="Main navigation"><a href="#features">Capabilities</a><a href="#run">Run locally</a><a href="README.md">Documentation</a></nav>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="main-title">
+      <div>
+        <span class="eyebrow">Built for Bengaluru</span>
+        <h1 id="main-title">Move smarter.<br><span>Travel together.</span></h1>
+        <p class="lead">TripBuddy AI is an agentic travel-assistant project designed to help plan multimodal journeys across Bengaluru—bringing route comparison, public-transport knowledge, retrieval-augmented answers and safety-aware trip workflows into one place.</p>
+        <div class="actions"><a class="btn" href="README.md">Explore project & setup</a><a class="btn secondary" href="https://github.com/santhoshparthasarathy25-prog/TripBuddy-Ai">View source on GitHub ↗</a></div>
+      </div>
+      <aside class="route-card" aria-label="Illustrative journey plan">
+        <h2>Journey planner · concept preview</h2>
+        <div class="route"><span class="dot"></span><p><strong>Starting point</strong><br><small>Choose a Bengaluru landmark or location</small></p></div>
+        <div class="route-line"></div>
+        <div class="route"><span class="dot"></span><p><strong>Compare travel options</strong><br><small>Metro · BMTC bus · walking · last-mile connections</small></p></div>
+        <div class="route-line"></div>
+        <div class="route"><span class="dot"></span><p><strong>Destination</strong><br><small>Review route, estimated cost and travel time</small></p></div>
+        <p style="color:var(--muted);font-size:12px;margin:18px 0 0">Illustrative interface preview only; this page does not request GPS or claim live vehicle tracking.</p>
+      </aside>
+    </section>
+    <section id="features">
+      <h2 class="section-title">Designed for practical city travel</h2>
+      <p class="section-copy">A project architecture focused on useful planning, transparent data and user control.</p>
+      <div class="grid">
+        <article class="feature"><div class="icon" aria-hidden="true">↗</div><h3>Multimodal routing</h3><p>Compare journey options across metro, bus, walking and last-mile connections using a route-optimization approach.</p></article>
+        <article class="feature"><div class="icon" aria-hidden="true">✳</div><h3>Agentic workflow</h3><p>Separate planning responsibilities for intent understanding, location resolution, route generation and safety validation.</p></article>
+        <article class="feature"><div class="icon" aria-hidden="true">⌕</div><h3>RAG & conversational help</h3><p>Retrieve relevant transport knowledge to support natural-language questions, with a path for English and Kannada.</p></article>
+        <article class="feature"><div class="icon" aria-hidden="true">◷</div><h3>Budget and time awareness</h3><p>Compare route trade-offs instead of assuming one route is best for every commuter.</p></article>
+        <article class="feature"><div class="icon" aria-hidden="true">◎</div><h3>Privacy-conscious location</h3><p>Location-dependent features should be used with permission; the static page itself does not access your location.</p></article>
+        <article class="feature"><div class="icon" aria-hidden="true">✓</div><h3>Honest demo mode</h3><p>Sample schedules and fixtures must be labelled as demo data, not represented as live GPS or confirmed service updates.</p></article>
+      </div>
+    </section>
+    <section id="run">
+      <h2 class="section-title">Run the application locally</h2>
+      <p class="section-copy">This GitHub Pages homepage is a project overview, not the full running backend/frontend. Follow the repository README for the actual setup.</p>
+      <div class="notice"><strong>Before starting:</strong> check that the project’s frontend and backend directories are present in the repository. Create your local <code>.env</code> from <code>.env.example</code>; never commit API keys, passwords or real credentials.</div>
+      <div class="steps" style="margin-top:22px">
+        <div class="step"><strong>1. Get the source</strong><p>Clone or download the repository and read the installation prerequisites in README.md.</p></div>
+        <div class="step"><strong>2. Configure services</strong><p>Set up the required environment variables. Use demo mode first if supported by the project.</p></div>
+        <div class="step"><strong>3. Start and verify</strong><p>Follow the documented commands, then check the local health endpoint and API docs if the backend starts successfully.</p></div>
+      </div>
+      <div class="actions"><a class="btn" href="README.md">Open setup instructions</a><a class="btn secondary" href="docker-compose.yml">Inspect Docker Compose</a></div>
+    </section>
+  </main>
+  <footer class="wrap"><span>TripBuddy AI · Bengaluru, Karnataka, India</span><span>Project preview · Verify live-service availability with official providers.</span></footer>
+</body>
+</html>
